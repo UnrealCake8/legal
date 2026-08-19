@@ -1,10 +1,179 @@
-<h1>MStudy</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MStudy - Student Dashboard</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2; /* School Blue */
+            --text-color: #2c3e50;
+            --bg-color: #f5f7fa;
+            --card-bg: #ffffff;
+            --accent-bg: #ebf5ff;
+        }
 
-<p>MStudy is a comprehensive, completely free productivity application designed exclusively for internal users enrolled at SES. The platform seamlessly synchronizes with your Google Classroom account, automatically retrieving crucial metadata regarding your assignments, tasks, and relevant course updates.</p>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-<p>Engineered as an all-in-one academic hub, MStudy empowers you to efficiently manage your lecture notes, assignments, school timetables, campus events, and daily homework in one centralized location.</p>
+        .container {
+            background-color: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
 
-<!-- Note: For proper HTML standards and accessibility, the anchor tag should wrap the button, or the button should be styled as a link -->
-<a href="https://study.mplace.cc" style="text-decoration: none;">
-    <button style="cursor: pointer;">Go to Login</button>
-</a>
+        .header-section {
+            text-align: center;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin: 0 0 5px 0;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* CRITICAL FOR GOOGLE REVIEW: Explicit Purpose Statement Box */
+        .purpose-box {
+            background-color: var(--accent-bg);
+            border-left: 4px solid var(--primary-color);
+            padding: 18px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+
+        .purpose-box h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 16px;
+        }
+
+        .purpose-box p {
+            font-size: 14px;
+            margin: 0;
+            color: #34495e;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: var(--text-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature-list {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        .feature-list li {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .btn-group {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #357abd;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            border-top: 1px solid var(--bg-color);
+            padding-top: 15px;
+        }
+
+        .nav-links a {
+            font-size: 12px;
+            color: #7f8c8d;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-section">
+        <h1>MStudy</h1>
+        <div class="tagline">SES Student Productivity Tool</div>
+    </div>
+
+    <!-- Google Compliance Section: Core Purpose Statement -->
+    <div class="purpose-box">
+        <h2>Application Purpose</h2>
+        <p>MStudy is an independent, specialized educational companion application built exclusively for students at SES. The purpose of this application is to enhance personal academic productivity by aggregating reference materials, compiling localized study tools, and tracking relevant assignment schedules in a centralized student dashboard.</p>
+    </div>
+
+    <h3>Core Features</h3>
+    <ul class="feature-list">
+        <li><strong>Dashboard Syncing:</strong> Keep track of upcoming deadlines, class task details, and assignment metadata.</li>
+        <li><strong>Study Guides & Flashcards:</strong> Compile, access, and review peer-to-peer study materials directly within the system.</li>
+        <li><strong>Classroom Indexing:</strong> Seamlessly organize and link out to public Google Classroom structural resources for quick reference.</li>
+    </ul>
+
+    <div class="btn-group">
+        <!-- Connect these to your application login or auth routes -->
+        <a href="https://study.mplace.cc" class="btn">Log In with School Account</a>
+    </div>
+
+    <!-- Navigation links for reviewers to browse policies from the front page -->
+    <div class="nav-links">
+        <a href="https://legal.mplace.cc/mstudy/terms">Terms & Honor Code</a>
+        <a href="https://legal.mplace.cc/mstudy/terms">Privacy Policy</a>
+    </div>
+</div>
+
+</body>
+</html>
+
